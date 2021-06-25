@@ -1,4 +1,8 @@
 
+/*
+run> node tests/test
+*/
+
 const testObj = require('./testObj')
 const fl = require('../index.js')(testObj)
 
