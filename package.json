@@ -1,0 +1,19 @@
+{
+	"name": "fluid_wrap",
+	"version": "0.1.2",
+	"description": "wrap, implementing fluid interface",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"fluid",
+		"wrap",
+		"enumerable",
+		"array",
+		"collection"
+	],
+	"author": "SPK80",
+	"license": "ISC",
+	"dependencies": {}
+}
