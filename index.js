@@ -9,7 +9,13 @@ module.exports = function wraper(module) {
 			for (const key in module) {
 				if (Object.hasOwnProperty.call(module, key) && key != "_") {
 					this[key] = (...args) => {
-						const result = module[key](this.#data, ...args)
+						let result;
+
+						if (this.#data)
+							result = module[key](this.#data, ...args)
+						else
+							result = module[key](...args)
+
 						if (result) this.#data = result
 						return this
 					}
