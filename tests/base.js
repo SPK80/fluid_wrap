@@ -1,6 +1,6 @@
 
 /*
-run> node tests/test
+to run> node tests/base
 */
 
 const testObj = require('./testObj')

@@ -11,13 +11,16 @@ module.exports = function wraper(module) {
 					this[key] = (...args) => {
 						let result;
 
-						if (this.#data)
+						try {
 							result = module[key](this.#data, ...args)
-						else
-							result = module[key](...args)
-
-						if (result) this.#data = result
-						return this
+							if (result) this.#data = result
+						}
+						catch (error) {
+							console.error(error);
+						}
+						finally {
+							return this
+						}
 					}
 				}
 			}
