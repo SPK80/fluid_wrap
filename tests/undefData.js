@@ -7,7 +7,7 @@ const obj = require('./testObj')
 
 const fl = require('../index.js')(obj)
 
-const r = fl().do(_ => console.log('Hello'))
+const r = fl().do(_ => console.log('Hello'))._
 
 
 console.log(r);
